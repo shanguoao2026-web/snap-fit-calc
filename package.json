@@ -1,0 +1,23 @@
+{
+  "name": "snap-fit-calc",
+  "version": "1.0.0",
+  "description": "Cantilever snap-fit design calculator",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "snap-fit-calc": "dist/cli.js"
+  },
+  "exports": "./dist/calculator.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test --test-isolation=none",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
